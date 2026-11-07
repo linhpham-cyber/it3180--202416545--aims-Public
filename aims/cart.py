@@ -33,3 +33,9 @@ def print_cart(self):
     else:
         print("Printing cart items...")
 
+
+def sort_by_title(self):
+    self.items.sort(key=lambda x: x.title)
+
+def sort_by_cost(self):
+    self.items.sort(key=lambda x: x.cost, reverse=True)
